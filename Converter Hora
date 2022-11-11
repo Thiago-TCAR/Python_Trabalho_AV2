@@ -1,0 +1,27 @@
+def imprimir(h,m,a):
+    return print(h,":",m,a)
+
+def converter(h,m):
+    if(h > 12):
+        h -= 12
+        return imprimir(h,m,"PM")
+    else:
+        return imprimir(h,m,"AM")
+        
+hora = 0
+while(hora >- 1):
+    hora = int(input("Digite -1 para sair ou\nDigite a hora: "))
+    if(hora == -1):
+        print("Obrigado")
+        break
+    elif(hora <= -2):
+        print("Valor invalido")
+        break
+    elif(hora > 24):
+        print("Valor invalido")
+        continue
+    minutos = int(input("Digite os Minuto: "))
+    if(minutos > 59):
+        print("Valor invalido")
+        continue
+    converter(hora,minutos)
