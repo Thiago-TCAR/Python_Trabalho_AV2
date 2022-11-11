@@ -1,0 +1,9 @@
+maior = float(input("Digite a base maior do trapezio: "))
+menor = float(input("Digite a base menor do trapezio: "))
+altura = float(input("Digite a altura do trapezio: "))
+
+def area_trapezio(a, b, c):
+    area = ((a+b)*c)/2
+    return print("A area do trapezio é ", area)
+
+area_trapezio(maior, menor, altura)
